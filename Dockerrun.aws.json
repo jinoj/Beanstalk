@@ -5,7 +5,6 @@
             "name": "devops",
             "image": "jjino/devops:latest",
             "hostname": "devops",
-            "essential": true,
             "portMappings": [
                 {
                 "hostPort": 3000,
