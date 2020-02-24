@@ -3,7 +3,7 @@ resource "aws_s3_bucket" "default" {
 }
 
 resource "aws_s3_bucket_object" "default" {
-  bucket = aws_s3_bucket.default.id
+  bucket = "{aws_s3_bucket.default.id}"
   key    = "beanstalk/1.txt"
   source = "1.txt"
 }
