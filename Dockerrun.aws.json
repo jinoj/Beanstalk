@@ -1,16 +1,12 @@
 {
-    "AWSEBDockerrunVersion": 2,
-    "containerDefinitions": [
-        {
-            "name": "devops",
-            "image": "jjino/devops:latest",
-            "hostname": "devops",
-            "portMappings": [
-                {
-                "hostPort": 3000,
-                "containerPort": 3000
-                }
-            ]
-        }
+    "AWSEBDockerrunVersion": "1",
+    "Image": {
+      "Name": "jjino/devops:latest",
+      "Update": "true"
+    },
+    "Ports": [
+      {
+        "ContainerPort": "3000"
+      }
     ]
-}
+  }
