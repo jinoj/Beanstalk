@@ -23,7 +23,8 @@ resource "aws_elastic_beanstalk_application_version" "default" {
 resource "aws_elastic_beanstalk_environment" "tfenvtest" {
   name                = "devops-node-materials-env"
   application         = "${aws_elastic_beanstalk_application.default.name}"
-  solution_stack_name = "64bit Amazon Linux 2018.03 v4.13.0 running Node.js"
+  solution_stack_name = "Docker"
+  #solution_stack_name = "64bit Amazon Linux 2018.03 v4.13.0 running Node.js"
 }
 
 output "ElasticBeansTalk" {
