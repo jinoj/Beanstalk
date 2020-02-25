@@ -16,7 +16,7 @@ script:
   - docker push "$docker_registry_name"/devops:latest
   - terraform init
   - terraform apply -auto-approve
-  - sleep 30
+  - sleep 20
 #  - terraform destroy -auto-approve 
 deploy:
   provider: elasticbeanstalk
