@@ -1,5 +1,5 @@
 resource "aws_s3_bucket" "default" {
-  bucket = "devops-node-bucket-made"
+  bucket = "devops-node-bucket-made-jinojoedevops-node-materials"
 }
 
 resource "aws_s3_bucket_object" "default" {
